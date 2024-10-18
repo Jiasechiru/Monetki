@@ -4,7 +4,6 @@
 
 .Landing-Intro {
   height: 670px;
-  width: 100vw;
 
   background: linear-gradient(to right, #f8d0d0, #a1a1b4);
   display: flex;
@@ -357,4 +356,116 @@
 .Landing-Footer {
   background-color: black;
   height: 200px;
+}
+
+@media (960px <= width < 1200px) {
+  .Landing-Intro {
+    height: 580px;
+  }
+
+  .Landing-Intro-text-field {
+    margin-right: 35px;
+    margin-left: 15px;
+  }
+
+  .appui-img {
+    height: 526px;
+    width: auto;
+    margin-top: 240px;
+    margin-right: 0px;
+  }
+  .Landing-Intro-title {
+    font-size: 36px;
+    line-height: 46px;
+    margin-top: 80px;
+  }
+  .Landing-Intro-par {
+    font-size: 14px;
+  }
+  .Landing-Intro-button {
+    margin-top: 50px;
+  }
+  .Landing-List {
+    padding-top: 155px;
+    padding-bottom: 145px;
+  }
+  .Landing-List-list {
+    font-size: 18px;
+  }
+  .Landing-List-container {
+    width: 800px;
+    padding-left: 25px;
+  }
+  .Landing-List-list li {
+    width: 360px;
+  }
+  .Landing-Info {
+    padding-bottom: 130px;
+  }
+  .Landing-Info-container {
+    width: 960px;
+  }
+  .Landing-Info-title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  .Landing-Info-par {
+    font-size: 20px;
+    width: 500px;
+  }
+  .Landing-Info-items-list {
+    margin-bottom: 15px;
+    gap: 80px;
+  }
+  .Landing-Info-items-list-item-title {
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .Landing-Info-items-list-item-par {
+    margin-top: 8px;
+    width: 240px;
+    font-size: 12px;
+  }
+  .Landing-Cost-table {
+    font-size: 14px;
+  }
+  .Landing-Cost-table td {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .Landing-Cost-table th {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .Cost-table-img {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  .Cost-table-button {
+    width: 140px;
+    font-size: 12px;
+  }
+
+  .Landing-Buy-container {
+    width: 960px;
+  }
+  .Landing-Buy-text-area {
+    margin-bottom: 42px;
+  }
+  .Landing-Buy-text-area-par {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+  .Landing-Buy-input {
+    width: 600px;
+  }
+}
+
+@media (width < 960px) {
+  .Landing-Buy-button {
+    background-color: blue;
+  }
 }
