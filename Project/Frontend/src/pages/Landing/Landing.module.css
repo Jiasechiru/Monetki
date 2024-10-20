@@ -277,7 +277,6 @@
   background-color: #15161b;
   height: 710px;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -312,9 +311,6 @@
   color: #d2d2d2;
   font-size: 18px;
   font-weight: 200;
-}
-
-.Landing-Buy-form {
 }
 
 .Landing-Buy-form-input-container {
@@ -464,8 +460,259 @@
   }
 }
 
-@media (width < 960px) {
-  .Landing-Buy-button {
-    background-color: blue;
+@media (640px <= width < 960px) {
+  .Landing-Intro {
+    flex-direction: column;
+    height: 770px;
+  }
+  .Landing-Intro-text-field {
+    margin: 0;
+    margin-top: 165px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Landing-Intro-title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .Landing-Intro-par {
+    font-size: 14px;
+    text-align: center;
+  }
+  .appui-img {
+    width: 347px;
+    margin: 0px;
+  }
+
+  .Landing-List-container {
+    width: 630px;
+    padding: 0;
+  }
+
+  .Landing-List {
+    height: 470px;
+  }
+  .Landing-List-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+
+    font-size: 18px;
+  }
+  .Landing-List-list li {
+    height: 42px;
+    margin-left: 18px;
+    width: 600px;
+  }
+
+  .Landing-Info {
+    height: 980px;
+  }
+
+  .Landing-Info-container {
+    width: 630px;
+  }
+  .Landing-Info-title {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .Landing-Info-par {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .Landing-Info-items-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 40px;
+    gap: 45px;
+  }
+  .Landing-Info-img {
+    margin-bottom: 30px;
+  }
+  .Landing-Info-items-list-item-title {
+    width: 330px;
+    font-size: 20px;
+  }
+  .Landing-Info-items-list-item-par {
+    font-size: 14px;
+  }
+
+  .Landing-Cost-table {
+    font-size: 12px;
+  }
+  .Landing-Cost-table td {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .Landing-Cost-table th {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .Cost-table-img {
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+  .Cost-table-button {
+    width: 80px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .Landing-Buy-container {
+    width: 630px;
+  }
+  .Landing-Buy-text-area {
+    margin-bottom: 50px;
+  }
+  .Landing-Buy-text-area-par {
+    text-align: center;
+    width: 580px;
+    margin-top: 8px;
+    font-size: 17px;
+  }
+  .Landing-Buy-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .Landing-Buy-input {
+    width: 580px;
+  }
+}
+
+@media (375px <= width < 640px) {
+  .Landing-Intro {
+    flex-direction: column;
+    height: 770px;
+  }
+  .Landing-Intro-text-field {
+    margin: 0;
+    margin-top: 165px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Landing-Intro-title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .Landing-Intro-par {
+    font-size: 14px;
+    text-align: center;
+  }
+  .appui-img {
+    width: 347px;
+    margin: 0px;
+  }
+
+  .Landing-List-container {
+    width: 370px;
+    padding: 0;
+  }
+
+  .Landing-List {
+    height: 470px;
+  }
+  .Landing-List-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+
+    font-size: 18px;
+  }
+  .Landing-List-list li {
+    height: 42px;
+    margin-left: 5px;
+    width: 370px;
+  }
+  .Landing-Info {
+    height: 980px;
+  }
+
+  .Landing-Info-container {
+    width: 370px;
+  }
+  .Landing-Info-text-area {
+    width: 370px;
+  }
+  .Landing-Info-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .Landing-Info-par {
+    font-size: 20px;
+    line-height: 34px;
+    width: 370px;
+  }
+
+  .Landing-Info-items-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 40px;
+    gap: 45px;
+  }
+  .Landing-Info-img {
+    margin-bottom: 30px;
+  }
+  .Landing-Info-items-list-item-title {
+    width: 330px;
+    font-size: 20px;
+  }
+  .Landing-Info-items-list-item-par {
+    font-size: 14px;
+  }
+
+  .Landing-Cost-table {
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .Landing-Cost-table td {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .Landing-Cost-table th {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .Cost-table-img {
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+  .Cost-table-button {
+    width: 50px;
+    font-size: 8px;
+    text-align: center;
+  }
+
+  .Landing-Buy-container {
+    width: 370px;
+  }
+  .Landing-Buy-text-area {
+    margin-bottom: 50px;
+  }
+  .Landing-Buy-text-area-title {
+    text-align: center;
+  }
+  .Landing-Buy-text-area-par {
+    text-align: center;
+    width: 370px;
+    margin-top: 8px;
+    font-size: 17px;
+  }
+  .Landing-Buy-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .Landing-Buy-input {
+    width: 346px;
   }
 }
